@@ -1,0 +1,21 @@
+<!-- 
+Name: Sai Kumar Reddy Chinthakunta
+UCID: sc2587
+Date of submission: 08-04-2023
+-->
+
+
+{% extends "base.html" %} {% block content %}
+<center>
+  <h1>Portfolio</h1>
+  {% if projects %}
+  <ul>
+    {% for project in projects %}
+    <li>{{ project.title }} - {{ project.year }}</li>
+    {% endfor %}
+  </ul>
+  {% else %}
+  <p>No projects found.</p>
+  {% endif %}
+</center>
+{% endblock %}
