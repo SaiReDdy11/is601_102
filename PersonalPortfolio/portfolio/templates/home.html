@@ -1,0 +1,17 @@
+<!-- 
+Name: Akshitha Thumma
+UCID: at892
+Date of submission: 08-04-2023
+-->
+
+
+{% extends "base.html" %} {% block content %}
+<center> 
+  <h1>Welcome to my personal portfolio!</h1>
+  <h2>{{ name }}</h2>
+  {% load static %}
+  <img src="{% static 'images.png' %}" alt="Photo" width="700" height="500">
+  <p>Email: {{ email }}</p>
+  <p>GitHub: <a href="{{ github }}">{{ github }}</a></p>
+</center>
+{% endblock %}

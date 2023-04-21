@@ -1,0 +1,38 @@
+<!-- 
+Name: Akshitha Thumma
+UCID: at892
+Date of submission: 08-04-2023
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'main.css' %}"/>
+    <link rel="stylesheet" href="{% static 'styles_home.css' %}">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+
+    <header>
+        <h1>My personal portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/portfolio/">Portfolio</a></li>
+                <li><a href="/about">About me</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}{% endblock %}
+  <footer class="footer mt-auto py-3">
+        <p>&copy; 2023 My portfolio. All rights reserved.</p>
+      {% load static %}
+      <script src="{% static 'main.js' %}"></script>
+  </footer>
+  </body>
+</html>
